@@ -252,7 +252,7 @@ h4 {
 
 /* PRODUCT*/
 .section__product{
-	width: 1200px;
+	width: 1400px;
 	display: flex;
 	flex-direction:row ;
 	justify-content: space-around;
