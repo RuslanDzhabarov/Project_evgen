@@ -262,11 +262,18 @@ span {
   font-weight: 500;
   line-height: 27px;
   text-align: left;
-  padding-left: 100px;
+ padding-left: 100px;
 }
 
 .about__item {
-
   display: flex;
   align-items: flex-start;
+}
+
+
+/* ????????? */
+.section__images {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
