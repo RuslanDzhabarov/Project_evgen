@@ -48,6 +48,8 @@ h6 {
 }
 
 .left {
+  padding-top:20px ;
+  margin: 0 auto;
   flex: 1 1 50%;
   display: flex;
   flex-direction: column;
@@ -157,11 +159,11 @@ p {
 
 
 /* SECTION */
-.about__item {
+/* .about__item {
   width: 100%;
   display: flex;
   align-items: flex-start;
-}
+} */
 
 .item{
 	display: flex;
@@ -191,23 +193,32 @@ p {
   display: flex;
 }
 
+
+/* ??? */
+.section__product{
+	width: 100%;
+	flex-direction:row ;
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+}
+
 .section__suptitle {
+  padding-left: 100px;
   font-size: 18px;
   font-weight: 400;
   line-height: 20.7px;
-
-  text-align: left;
-  align-items: end;
+  text-align: center;
+  
   color: #bedf77;
 }
 
 .section__title {
-	display: flex;
-	
-  font-size: 64px;
+  padding-left: 100px;
+	font-size: 64px;
   font-weight: 400;
   text-align: left;
-  align-items: end;
+  
 }
 
 .section__text p {
@@ -217,6 +228,15 @@ p {
   line-height: 27px;
   text-align: left;
   padding-top: 0;
+  padding-left: 100px;
+}
+
+h4 {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 25.3px;
+  text-align: left;
+  padding-left: 100px;
 }
 
 span {
@@ -224,13 +244,6 @@ span {
   font-size: 18px;
   font-weight: 700;
   line-height: 27px;
-  text-align: left;
-}
-
-h4 {
-  font-size: 22px;
-  font-weight: 400;
-  line-height: 25.3px;
   text-align: left;
 }
 
@@ -243,55 +256,17 @@ h4 {
 }
 
 .stage {
-	width: 0 auto;
+	width:  auto;
   font-family: Poppins;
   font-size: 18px;
   font-weight: 500;
   line-height: 27px;
   text-align: left;
-
+  padding-left: 100px;
 }
 
-/* PRODUCT*/
-.section__product{
-	width: 100%;
-	display: flex;
-	flex-direction:row ;
-	justify-content: space-around;
-  align-items: center;
-}
+.about__item {
 
-
-.photo__product{
-	display: flex;
-	flex-direction: column;
-	
-}
-
-h6 {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 20px;
-  color: #00000080;
-
+  align-items: flex-start;
 }
-
-.product{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-weight: 700;
-  color: #161C2D;
-
-}
-
-.img__product{
-  display: block;
-  flex-direction: column;
-  width: 33.3%;
-}
-
-
-
-  
