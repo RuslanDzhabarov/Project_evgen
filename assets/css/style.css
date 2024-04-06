@@ -349,41 +349,49 @@ span {
 /*?????????????*/
 .section__input {
   width: 100%;
-  height: 508px;
+  /* height: 508px; */
   padding: 32px 15px 24px;
   background-color: #161C2D;
+
 }
 
 .product{
-  width: 100%;
+  width:100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  color: white;
 
+  color: white;
+  align-items: flex-start;
 }
 
 .product__input{
-  font-size: 24px;
+  font-size: 64px;
   font-weight: 400;
-  line-height: 32;
-  margin-bottom: 18px;
+  line-height: 64px;
+  margin: 65px 535px 0px 173px;
+  width: 730px;
 }
 
 .product p{
-  font-size: 16px;
-  font-weight: 500;
+  width:100%;
+  font-size: 24px;
+  font-weight: 400;
   line-height:24px;
-  margin-bottom: 24px;
+  padding-right: 120px;
+  margin: 16px 710px 10px 173px;
+  
 }
 
 .dropdown {
-  width: 100%;
-  padding: 8px 24px;
+  width: 600px;
+  display: flex;
+  padding: 10px ;
   border-radius: 12px;
   background: #FFFFFF;
-
+  align-items: start;
+  justify-content: flex-start;
+  margin: 10px 10px 10px 10px;
 }
 
 .dropdown:hover {
@@ -403,4 +411,31 @@ span {
   line-height: 24px;
   border: none;
   background: transparent;
+}
+
+/*??????????????????????????????????????????????????*/
+.section__order{
+  width: 100%;
+
+}
+
+.order{
+  width: 100%;
+
+}
+
+.order__suptitle{
+  font-size: 18px;
+  font-weight: 400;
+  padding: 100px 973px 2px 175px;
+  text-align:left;
+  color: #bedf77;
+}
+
+.order__title{
+  width: 100%;
+  font-size: 64px;
+  font-weight: 500;
+  line-height: 64px;
+  padding:11px 699px 45px 170px ;
 }
