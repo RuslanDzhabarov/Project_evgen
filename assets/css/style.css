@@ -578,3 +578,12 @@ span {
   color:  #00000080;
 
 }
+
+.container__order{
+  max-width: 1090px;
+  display: flex;
+  left: 175px;
+  padding: 30px ;
+  border-radius: 8px ;
+  justify-content: space-between;
+}
