@@ -475,17 +475,17 @@ span {
   line-height: 18px;
   text-align: left;
   color:  #00000080;
-  ;
+  
 }
 
-input.order__inpt {
-  width: 100%;
+.inpt__place {
+  width: 432px;
   font-size: 18px;
   font-weight: 400;
   line-height: 18px;
   text-align: left;
   color: #161C2D;
-
+  padding: 16px 23px 16px 23px;
 }
 
 .order__inpt{
@@ -520,8 +520,61 @@ input.order__inpt {
   width:432px;
   padding: 16px 23px 16px 23px;
   border-radius: 8px;
-  border: 1px 0px 0px 0px;
-  opacity: 0px;
+ 
   border: 1px solid #BEDF77
 }
 
+.left__orders{
+  flex: 1;
+  padding: 20px;
+  margin: 0px 0px 24px 171px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+	max-width: 534px;
+  border-radius: 8px;
+
+
+}
+
+.text__orders{
+  width: 474px;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: left;
+  color: #161C2D;
+
+}
+
+.left__orders p{
+  width: 100%;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: left;
+  color: #161C2D;
+   
+ }
+
+ .right__orders {
+  flex: 1;
+  padding: 20px;
+  margin: 0px 210px 24px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+	max-width: 534px;
+  border-radius: 8px;
+  background-color: #BEDF77;
+}
+
+.right__orders p{
+  width: 100%;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: left;
+  color:  #00000080;
+
+}
