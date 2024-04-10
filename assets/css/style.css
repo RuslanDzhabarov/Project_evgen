@@ -481,6 +481,13 @@ span {
   border-radius: 8px;
 }
 
+.right__payment{
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+}
+
 .right__order {
   flex: 1;
   padding: 20px;
