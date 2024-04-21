@@ -6,10 +6,9 @@ body {
   line-height: 1.6;
   color: #161c2d;
   background-image: url("../background/App\ Landing\ Page.png");
-  background-position-x:center;
-  background-repeat: no-repeat;
-  background-size: revert;
-
+  background-size: unset;
+  background-repeat: no-repeat; 
+  background-position: center; 
 }
 
 *,
@@ -389,6 +388,10 @@ span {
   color: white;
   align-items: flex-start;
   margin-bottom: 64px;
+  background-image: url(/assets/background/Frame.png) ;
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  background-position: center; 
 }
 
 .product__wrapper {
