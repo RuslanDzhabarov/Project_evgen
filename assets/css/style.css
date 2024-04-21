@@ -1,15 +1,25 @@
+@font-face {
+  font-family: "Coolvetica"; 
+  src: url("../Fonts/coolvetica\ rg.ttf") format("truetype"); 
+  font-style: normal; 
+  font-weight: normal; 
+} 
+
+
 body {
   margin: 0;
-  font-family: Ubuntu;
+  font-family: "Coolvetica";
   width: 100%;
-
   line-height: 1.6;
   color: #161c2d;
   background-image: url("../background/App\ Landing\ Page.png");
   background-size: unset;
   background-repeat: no-repeat; 
   background-position: center; 
+  
 }
+
+
 
 *,
 *::after,
@@ -151,8 +161,7 @@ h6 {
 p {
   font-weight: 500;
   font-size: 18px;
-  font-family: Poppins;
-
+  font-family: "Poppins";
   line-height: 100%;
   text-align: left;
 }
@@ -186,7 +195,7 @@ p {
 .top__icons{
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   column-gap: 32px;
   padding: 20px 0px;
 }
@@ -212,14 +221,10 @@ p {
 .bottom__icons{
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   column-gap: 32px;
   padding: 20px 0px;
 }
-
-
-
-
 
 
 
