@@ -1020,14 +1020,14 @@ span {
 	.header__burger::after{
 		bottom: 0;
 	}
-	.header__burger:active span{
+	.header__burger.active span{
 		transform: scale(0);
 	}
-	.header__burger:active::before{
+	.header__burger.active::before{
 		transform: rotate(45deg);
 		top: 9px;
 	}
-	.header__burger:active::after{
+	.header__burger.active::after{
 		transform: rotate(-45deg);
 		bottom: 9px;
 	}
@@ -1042,7 +1042,7 @@ span {
 		background-color:#545c42 ;
 		padding: 70px 10px 20px 10px;
 	}
-	.header__menu:active{
+	.header__menu.active{
 		top: 0;
 	}
 
@@ -1052,8 +1052,13 @@ span {
 	.header__list li{
 		margin:0px 0px 20px 0px ;
 	}
+
 	.nav__link{
 		display: none;
+	}
+
+	.header__menu.active .nav__link {
+		display: flex;
 	}
 
 	.product__bottom {
