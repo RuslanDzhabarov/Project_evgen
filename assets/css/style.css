@@ -5,7 +5,6 @@
   font-weight: normal; 
 } 
 
-
 body {
   margin: 0;
   font-family: "Coolvetica";
@@ -18,8 +17,6 @@ body {
   background-position: center; 
   
 }
-
-
 
 *,
 *::after,
@@ -39,30 +36,27 @@ h6 {
 .container {
   width: 100%;
   max-width: 1440px;
+  padding: 0 15px;
   margin: 0 auto;
 }
 
 .intro {
   width: 100%;
- 
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
 
-  /* background: url("/assets/Images/Ellipse\ 2.png"); */
 }
 
 .intro__inner {
   width: 100%;
   max-width: 100%;
   margin: 0;
-
   display: flex;
   flex-direction: row;
 }
 
 .left {
-  
   margin: 0 auto;
   flex: 1 1 50%;
   display: flex;
@@ -70,6 +64,7 @@ h6 {
   align-items: flex-start;
   width: 70%;
 }
+
 .right {
   flex: 1 1 50%;
 }
@@ -984,3 +979,12 @@ span {
 .icon__place{
   margin: 0px 5px 0px 5px;
 }
+
+@media (max-width: 1200px){
+
+}
+ 
+@media (max-width:1024) {}
+@media (max-width:922){}
+@media (max-width:768) {}
+@media (max-width:560){}
