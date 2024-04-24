@@ -980,11 +980,19 @@ span {
   margin: 0px 5px 0px 5px;
 }
 
-@media (max-width: 1200px){
+@media (min-width: 1200px){
 
 }
  
-@media (max-width:1024) {}
-@media (max-width:922){}
-@media (max-width:768) {}
-@media (max-width:560){}
+@media (min-width:1024) {
+  .container{
+    width: 1150px;
+  }
+}
+@media (min-width:922){
+  .container{
+    width: 1000px;
+  }
+}
+@media (min-width:768) {}
+@media (min-width:560){}
