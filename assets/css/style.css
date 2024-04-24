@@ -60,7 +60,7 @@ h6 {
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
-	width: 70%;
+	width: 70%; 
 }
 
 .right {
@@ -188,16 +188,20 @@ p {
 .top__icons {
 	width: 100%;
 	display: flex;
-	justify-content: center;
-	column-gap: 32px;
-	padding: 20px 0px;
+	justify-content: space-between;
+	column-gap: 24px;
+	grid-row-gap: 24px;
+	margin-bottom: 24px;
 }
 
 .icons__img {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	justify-content: space-around;
+	justify-content: space-between;
+	border: 1px solid rgba(0,0,0, .1);
+	border-radius: 12px;
+	padding: 18px 12px;
 }
 
 .icons__img p {
@@ -213,9 +217,8 @@ p {
 .bottom__icons {
 	width: 100%;
 	display: flex;
-	justify-content: space-around;
-	column-gap: 32px;
-	padding: 20px 0px;
+	justify-content: space-between;
+	grid-row-gap: 24px;
 }
 
 /* ??? */
@@ -412,7 +415,8 @@ span {
 .product__bottom {
 	display: flex;
 	align-items: flex-start;
-	justify-content: space-around;
+	justify-content: space-between;
+	margin: 60px 0px;
 }
 
 .up {
@@ -420,7 +424,6 @@ span {
 	flex-direction: column;
 	align-items: flex-start;
 	justify-content: center;
-	padding: 0px 12px 100px 45px;
 	font-size: 28px;
 	font-weight: 400;
 	line-height: 28px;
@@ -953,41 +956,76 @@ span {
 	margin: 0px 5px 0px 5px;
 }
 
+
+/* PRODUCTS SECTION */
+.products__wrapper {
+	display: flex;
+	margin: 120px 0px;
+}
+
+
+
+
 @media (max-width: 1200px) {
+	.product__bottom {
+		flex-wrap: wrap;
+		margin: 24px 0px;
+	}
+
+	.product__wrapper {
+		flex-wrap: wrap;
+		grid-row-gap: 24px;
+		padding: 0;
+		margin-top: 32px;
+	}
+	
 	/**HEADER**/
 	.container{
 		max-width: 1024px;
 	}
 
 	.header {
-		width: 83%;
 		display: flex;
-		padding: 35px 0px 35px 185px;
+	}
+
+	/* Сделать BURGER MENU */
+	.nav {
+		display: none;
 	}
 
 	/**FIRST BLOCK**/
-	.left {
+	.intro .left {
+		flex: 1 1 100%;
 		display: flex;
-		align-items: center;
-		min-width: 1150px;
+		align-items: flex-start;
 	}
+
+	.about__wrapper .right {
+		padding-left: 0;
+	}
+
+	.about__wrapper .about__item {
+		display: none;
+	}
+
+	.intro .right {
+		display: none;
+	}
+	
 	.intro__title {
 		font-size: 60px;
 	}
 	p {
-		width: 93%;
 		max-width: 100%;
 		font-size: 32px;
 	}
 	.btn {
-		width: 40%;
 		display: flex;
 		align-items: center;
 		font-size: 21px;
 		margin-bottom: 20px;
 	}
 	.images__lents {
-		width: 60%;
 		display: flex;
 		align-items: center;
 	}
@@ -1004,26 +1042,21 @@ span {
 		flex-direction: column-reverse;
 	}
 	.item {
-		width: 75%;
 		padding-left: 35px;
 	}
 	.about__items {
 		display: none;
 	}
 	.section__suptitle {
-		width: 83%;
 		display: flex;
 		font-size: 40px;
 	}
 	.section__title {
-		width: 83%;
 		font-size: 80px;
 	}
 	.section__stage {
-		width: 83%;
 	}
 	.section__text p {
-		width: 83%;
 		font-size: 26px;
 	}
 	.stage__s {
@@ -1039,10 +1072,33 @@ span {
 }
 
 @media (max-width: 1024px) {
-	/**HEADER**/
-	/* .container{
-    width: 60%;
-  } */
+	.products .right {
+		display: none;
+	}
+
+	.products .left {
+		align-items: flex-start;
+	}
+
+
+	.order__content {
+		flex-direction: column;
+	}
+
+	.container__order .right__payment {
+		display: none;
+	}
+
+	/* ICONS SECTION */
+	.icons .top__icons {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+	.icons .bottom__icons {
+		display: grid;
+		column-gap: 24px;
+		grid-template-columns: 1fr 1fr 1fr;
+	}
 
 	/**FIRST BLOCK**/
 	.left {
@@ -1052,10 +1108,10 @@ span {
 		flex-wrap: wrap;
 	}
 	.intro__title {
-		font-size: 23px;
+		font-size: 45px;
+		line-height: 115%;
 	}
 	p {
-		width: 68%;
 		max-width: 100%;
 		font-size: 20px;
 	}
@@ -1065,16 +1121,12 @@ span {
 		align-items: center;
 	}
 	.images__lents {
-		width: 60%;
 		display: flex;
 		align-items: center;
 	}
 	.icon__btn {
-		width: 10%;
 	}
-	.right {
-		display: none;
-	}
+	
 	.images__box {
 		display: none;
 	}
@@ -1084,26 +1136,21 @@ span {
 		flex-direction: column-reverse;
 	}
 	.item {
-		width: 75%;
 		padding-left: 35px;
 	}
 	.about__items {
 		display: none;
 	}
 	.section__suptitle {
-		width: 83%;
 		display: flex;
 		font-size: 40px;
 	}
 	.section__title {
-		width: 83%;
 		font-size: 80px;
 	}
 	.section__stage {
-		width: 83%;
 	}
 	.section__text p {
-		width: 83%;
 		font-size: 26px;
 	}
 	.stage__s {
