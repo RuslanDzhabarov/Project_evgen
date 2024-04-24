@@ -1053,6 +1053,10 @@ span {
 		margin:0px 0px 20px 0px ;
 	}
 
+	.header__inner .header__burger .btn{
+		display: flex;
+		flex-direction: row-reverse;
+	}
 	.nav__link{
 		display: none;
 	}
@@ -1117,7 +1121,6 @@ span {
 		display: flex;
 		align-items: center;
 		font-size: 21px;
-		margin-bottom: 20px;
 	}
 	.images__lents {
 		display: flex;
